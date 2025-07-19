@@ -1,114 +1,106 @@
-# AI Portfolio - Kunwoo Na
+# 오늘의 To-do 리스트 앱
 
-AI 전문가 포트폴리오 웹사이트입니다. 머신러닝과 딥러닝 프로젝트들을 소개하는 개인 포트폴리오입니다.
+현대적이고 아름다운 UI를 가진 React 기반 To-do 리스트 애플리케이션입니다.
 
-## 🚀 프로젝트 소개
+## 🌟 주요 기능
 
-이 포트폴리오는 AI와 머신러닝 분야의 전문가로서의 경험과 프로젝트들을 보여주는 웹사이트입니다. 
+- ✅ 할 일 추가/삭제
+- ✅ 완료 상태 토글
+- ✅ 로컬 스토리지에 데이터 저장
+- ✅ 완료된 항목 일괄 삭제
+- ✅ 반응형 디자인 (모바일 지원)
+- ✅ 아름다운 그라데이션 UI
+- ✅ 실시간 통계 표시
 
-### 주요 특징
-- **반응형 디자인**: 모든 디바이스에서 최적화된 경험
-- **모던 UI/UX**: 깔끔하고 전문적인 디자인
-- **AI 프로젝트 쇼케이스**: 6개의 주요 AI 프로젝트 소개
-- **인터랙티브 요소**: 스크롤 애니메이션과 파티클 효과
+## 🚀 배포된 앱
 
-## 🛠️ 기술 스택
+**Live Demo**: [https://todo-app.onrender.com](https://todo-app.onrender.com)
 
-### Frontend
-- HTML5
-- CSS3 (Grid, Flexbox, Animations)
-- Vanilla JavaScript
-- 반응형 웹 디자인
+## 🛠 기술 스택
 
-### AI/ML 기술
-- Python
-- TensorFlow
-- PyTorch
-- Scikit-learn
-- NLP (Natural Language Processing)
-- Computer Vision
-- Deep Learning
-- MLOps
+- React 18
+- CSS3 (그라데이션, 애니메이션)
+- Lucide React (아이콘)
+- LocalStorage (데이터 저장)
+
+## 📦 설치 및 실행
+
+### 로컬 개발
+
+1. 의존성 설치:
+```bash
+npm install
+```
+
+2. 개발 서버 실행:
+```bash
+npm start
+```
+
+3. 브라우저에서 `http://localhost:3000` 접속
+
+### 배포
+
+이 앱은 Render를 통해 무료로 배포되었습니다. 배포 방법은 [DEPLOYMENT.md](./DEPLOYMENT.md)를 참조하세요.
+
+## 📖 사용법
+
+1. **할 일 추가**: 입력창에 할 일을 입력하고 + 버튼을 클릭하거나 Enter를 누릅니다.
+2. **완료 표시**: 체크박스를 클릭하여 완료 상태를 토글합니다.
+3. **삭제**: 휴지통 아이콘을 클릭하여 개별 항목을 삭제합니다.
+4. **완료된 항목 일괄 삭제**: 하단의 "완료된 항목 삭제" 버튼을 클릭합니다.
 
 ## 📁 프로젝트 구조
 
 ```
-html/
-├── index.html          # 메인 포트폴리오 페이지
-├── .gitignore          # Git 무시 파일 목록
-└── README.md           # 프로젝트 문서
+src/
+├── components/
+│   ├── Header.js          # 앱 헤더 (제목, 날짜)
+│   ├── TodoForm.js        # 할 일 입력 폼
+│   ├── TodoList.js        # 할 일 목록 컨테이너
+│   └── TodoItem.js        # 개별 할 일 아이템
+├── App.js                 # 메인 앱 컴포넌트
+├── index.js              # 앱 진입점
+└── index.css             # 전역 스타일
 ```
 
-## 🎯 AI 프로젝트들
+## ✨ 특징
 
-### 1. 감정 분석 AI 시스템
-- **기술**: BERT, Transformer, NLP, FastAPI
-- **설명**: 고객 리뷰와 소셜미디어 텍스트의 감정 분석
+- **현대적인 UI**: 그라데이션과 블러 효과를 활용한 모던한 디자인
+- **반응형**: 모바일과 데스크톱 모두에서 최적화된 경험
+- **애니메이션**: 부드러운 호버 효과와 전환 애니메이션
+- **데이터 지속성**: 브라우저를 닫아도 데이터가 유지됩니다
+- **접근성**: 키보드 네비게이션과 스크린 리더 지원
 
-### 2. 이상 탐지 AI
-- **기술**: LSTM, Time Series, Anomaly Detection, IoT
-- **설명**: 제조업체 센서 데이터를 통한 장비 고장 예측
+## 🚀 배포 정보
 
-### 3. 컴퓨터 비전 품질 검사
-- **기술**: YOLO, CNN, Computer Vision, OpenCV
-- **설명**: 제조 라인에서의 자동화된 불량품 탐지
+- **호스팅**: Render (무료 플랜)
+- **배포 방식**: Static Site
+- **자동 배포**: GitHub main 브랜치 푸시 시 자동 배포
+- **도메인**: `https://todo-app.onrender.com`
 
-### 4. 추천 시스템 AI
-- **기술**: Collaborative Filtering, Neural Networks, A/B Testing
-- **설명**: 개인화된 콘텐츠 추천 시스템
+## 📝 빌드
 
-### 5. 자연어 처리 챗봇
-- **기술**: GPT, Chatbot, NLP, Dialogflow
-- **설명**: 고객 서비스 자동화 챗봇
+프로덕션 빌드를 생성하려면:
 
-### 6. MLOps 파이프라인
-- **기술**: MLOps, Kubernetes, Docker, MLflow
-- **설명**: 머신러닝 모델 자동화 배포 시스템
-
-## 🚀 배포 방법
-
-### GitHub Pages를 통한 배포
-1. GitHub Desktop에서 저장소 생성
-2. 파일들을 커밋하고 푸시
-3. GitHub 저장소 설정에서 Pages 활성화
-4. `index.html`을 루트 파일로 설정
-
-### 로컬에서 실행
 ```bash
-# 프로젝트 폴더로 이동
-cd html
-
-# 로컬 서버 실행 (Python 사용)
-python -m http.server 8000
-
-# 또는 Node.js 사용
-npx serve .
+npm run build
 ```
 
-## 📱 반응형 디자인
+빌드된 파일은 `build` 폴더에 생성됩니다.
 
-- **데스크톱**: 1200px 이상
-- **태블릿**: 768px - 1199px
-- **모바일**: 767px 이하
+## 🤝 기여하기
 
-## 🎨 디자인 특징
-
-- **다크 테마**: 전문적이고 모던한 느낌
-- **그라데이션**: 보라색 계열의 세련된 색상
-- **애니메이션**: 부드러운 스크롤과 페이드인 효과
-- **파티클**: 배경의 인터랙티브한 요소
-
-## 📞 연락처
-
-- **Email**: your@email.com
-- **LinkedIn**: [프로필 링크]
-- **GitHub**: [프로필 링크]
-- **Kaggle**: [프로필 링크]
+1. 이 저장소를 Fork하세요
+2. 새로운 기능 브랜치를 생성하세요 (`git checkout -b feature/amazing-feature`)
+3. 변경사항을 커밋하세요 (`git commit -m 'Add some amazing feature'`)
+4. 브랜치에 푸시하세요 (`git push origin feature/amazing-feature`)
+5. Pull Request를 생성하세요
 
 ## 📄 라이선스
 
-이 프로젝트는 개인 포트폴리오 목적으로 제작되었습니다.
+이 프로젝트는 MIT 라이선스 하에 배포됩니다.
 
----
+## 📞 문의
 
-© 2025 Kunwoo Na / 나건우. AI Specialist. All rights reserved. 
+프로젝트에 대한 질문이나 제안사항이 있으시면 GitHub Issues를 통해 연락해주세요. 
